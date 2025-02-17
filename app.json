@@ -1,7 +1,10 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/login/login",
+    "pages/regist/regist"
   ],
+  "entryPagePath": "pages/index/index",
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
