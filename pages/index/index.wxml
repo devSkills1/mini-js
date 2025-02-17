@@ -1,7 +1,4 @@
 <!--index.wxml-->
-<navigation-bar title="mini-js" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    第一个小程序js-dome
-  </view>
-</scroll-view>
+<view class="container">
+  第一个小程序js-dome
+</view>
