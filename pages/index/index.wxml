@@ -1,4 +1,19 @@
 <!--index.wxml-->
+<import src="row"/>
+
+<template is="row" data="{{firstName:'lu', lastName:'jianrong'}}"/>
+
 <view class="container">
   第一个小程序js-dome
 </view>
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+{{idx}}: {{itemName.message}}
+</view>
+<view wx:if="{{array.length > 10}}">1</view>
+<view wx:elif="{{array.length == 2 }}">2</view>
+<view wx:else>0</view>
+<block wx:if="{{true}}">
+  <view>block_1</view>
+  <view>block_2</view>
+  <view>block_3</view>
+</block>

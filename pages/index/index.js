@@ -1,2 +1,10 @@
 // index.js
-Page({})
+Page({
+  data: {
+    array: [{
+      message: 'foo',
+    }, {
+      message: 'bar'
+    }]
+  }
+})
