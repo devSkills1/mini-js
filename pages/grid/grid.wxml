@@ -1,0 +1,9 @@
+<view class="grid-container">
+  <block wx:for="{{currentPageItems}}" wx:key="index">
+    <view class="grid-item">{{item}}</view>
+  </block>
+</view>
+<view class="pagination">
+  <button bindtap="prevPage" disabled="{{currentPage === 0}}">Previous</button>
+  <button bindtap="nextPage" disabled="{{currentPage === totalPages - 1}}">Next</button>
+</view>

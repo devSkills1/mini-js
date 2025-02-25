@@ -1,2 +1,11 @@
-<!--pages/login/login.wxml-->
-<view>Login Page</view>
+<swiper indicator-dots="{{true}}" autoplay="{{false}}" circular="{{false}}">
+  <block wx:for="{{appPages}}" wx:key="index">
+    <swiper-item>
+      <view class="page">
+        <view wx:for="{{item}}" wx:key="index" class="app-item">
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

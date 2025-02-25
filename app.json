@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/grid/grid"
   ],
-  "entryPagePath": "pages/index/index",
+  "entryPagePath": "pages/grid/grid",
   "window": {
     "navigationBarBackgroundColor": "#0000FF",
     "navigationBarTitleText": "功能演示",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "backgroundTextStyle": "dark"
   },
   "tabBar": {
@@ -21,6 +22,9 @@
       {
         "pagePath": "pages/login/login",
         "text": "登录"
+      },{
+        "pagePath": "pages/grid/grid",
+        "text": "网格"
       }
     ]
   },

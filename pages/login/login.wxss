@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%; /* 行间隙2%，列间隙4% */
+  padding: 10px; /* 容器内边距 */
+}
+
+.app-item {
+  box-sizing: border-box;
+  width: calc((100% - 4 * 4%) / 5); /* 5列，4个列间隙 */
+  height: 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 100px;
+}

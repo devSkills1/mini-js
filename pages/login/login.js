@@ -1,66 +1,34 @@
-// pages/login/login.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    appList: [
+      { name: 'APP 1' },
+      { name: 'APP 2' },
+      { name: 'APP 3' },
+      { name: 'APP 4' },
+      { name: 'APP 5' },
+      { name: 'APP 6' },
+      { name: 'APP 7' },
+      { name: 'APP 8' },
+      { name: 'APP 9' },
+      { name: 'APP 10' },
+      { name: 'APP 11' },
+      { name: 'APP 12' },
+      // 可以继续添加更多 APP
+    ],
+    appPages: []
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  onLoad() {
+    this.splitAppsIntoPages();
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  splitAppsIntoPages() {
+    const { appList } = this.data;
+    const pages = [];
+    const pageSize = 10;
+    for (let i = 0; i < appList.length; i += pageSize) {
+      pages.push(appList.slice(i, i + pageSize));
+    }
+    this.setData({
+      appPages: pages
+    });
   }
-})
+});
