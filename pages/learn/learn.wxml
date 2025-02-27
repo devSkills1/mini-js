@@ -1,0 +1,10 @@
+<view class="H1"> template </view>
+<template name="staffName">
+  <view>
+    FirstName:{{firstName}} LastName:{{lastName}}
+  </view>
+</template>
+
+<block wx:for="{{staff}}" wx:key="staffIndex">
+  <template is="staffName" data="{{...item}}"></template>
+</block>

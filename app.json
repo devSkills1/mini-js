@@ -2,9 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/login/login",
-    "pages/grid/grid"
+    "pages/grid/grid",
+    "pages/learn/learn"
   ],
-  "entryPagePath": "pages/grid/grid",
+  "entryPagePath": "pages/index/index",
   "window": {
     "navigationBarBackgroundColor": "#0000FF",
     "navigationBarTitleText": "功能演示",
@@ -22,9 +23,14 @@
       {
         "pagePath": "pages/login/login",
         "text": "登录"
-      },{
+      },
+      {
         "pagePath": "pages/grid/grid",
         "text": "网格"
+      },
+      {
+        "pagePath": "pages/learn/learn",
+        "text": "学习"
       }
     ]
   },

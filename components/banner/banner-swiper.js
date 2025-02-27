@@ -4,5 +4,10 @@ Component({
       type: Array,
       value: []
     }
+  },
+  methods: {
+    handleItemClick(e) {
+      console.log(e)
+    }
   }
 })

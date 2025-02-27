@@ -1,5 +1,0 @@
-<template name="row">
-  <view catch:tap="--index">
-    FirstName:{{firstName}}, LastName:{{lastName}}
-  </view>
-</template>

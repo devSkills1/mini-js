@@ -1,0 +1,26 @@
+<!-- <swiper class="swiper" indicator-dots="{{showIndicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperItems}}" wx:key="index">
+    <swiper-item>
+      <view class="grid">
+        <block wx:for="{{item}}" wx:key="index">
+          <view class="grid-item">{{item}}</view>
+        </block>
+      </view>
+    </swiper-item>
+  </block>
+</swiper> -->
+
+<swiper class="swiper" indicator-dots="{{showIndicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperItems}}" wx:key="index">
+    <swiper-item>
+      <view class="grid">
+        <block wx:for="{{item}}" wx:key="index">
+          <view class="grid-item" bindtap="handleItemClick" data-url="{{item.url}}" data-login-type="{{item.loginType}}">
+            <image class="grid-item-icon" src="{{item.icon}}" />
+            <text class="grid-item-title">{{item.title}}</text>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
