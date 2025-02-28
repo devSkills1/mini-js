@@ -2,6 +2,7 @@
   "navigationBarTitleText": "首页",
   "usingComponents": {
     "banner-swiper": "../../components/banner/banner-swiper",
-    "swiper-grid": "../../components/grid/swiper-grid"
+    "swiper-grid": "../../components/grid/swiper-grid",
+    "tab-segment": "../../components/tab-segment/tab-segment"
   }
 }

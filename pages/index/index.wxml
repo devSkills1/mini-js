@@ -1,4 +1,5 @@
-<scroll-view class="container">
+<scroll-view class="container" scroll-y="true" enable-flex="true">
   <banner-swiper banners="{{banners}}"></banner-swiper>
   <swiper-grid items="{{grid_items}}"></swiper-grid>
+  <tab-segment class="tabs" tabs="{{tabs}}" direction="horizontal" bind:tabSelected="onTabSelected"></tab-segment>
 </scroll-view>

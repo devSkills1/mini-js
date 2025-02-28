@@ -5,3 +5,8 @@
   flex-direction: column;
   background-color: bisque;
 }
+
+.container .tabs {
+  width: 80%;
+  background-color: yellowgreen;
+}

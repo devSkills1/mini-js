@@ -1,0 +1,45 @@
+.tabs {
+  display: flex;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.tabs.horizontal {
+  flex-direction: row;
+}
+
+.tabs.vertical {
+  flex-direction: column;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-title {
+  margin-bottom: 2px;
+  font-size: 16px;
+  color: #000;
+}
+
+.indicator {
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.indicator.active {
+  background-color: #007aff;
+}
+
+.tab.active .tab-title {
+  color: #007aff;
+}

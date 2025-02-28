@@ -1,0 +1,11 @@
+<view class="tabs {{direction}}">
+  <block wx:for="{{tabs}}" wx:key="index">
+    <view class="tab {{currentTab === index ? 'active' : ''}}" 
+          style="flex: {{item.flex}};" 
+          bindtap="selectTab" 
+          data-index="{{index}}">
+      <text class="tab-title">{{item.title}}</text>
+      <view class="indicator {{currentTab === index ? 'active' : ''}}"></view>
+    </view>
+  </block>
+</view>

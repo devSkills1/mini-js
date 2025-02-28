@@ -18,6 +18,20 @@ Page({
       { title: 'Item 10', icon: '../../images/default.png', url: '/pages/page10/page10', loginType: 0 },
       { title: 'Item 11', icon: '../../images/default.png', url: '/pages/page11/page11', loginType: 0 }
     ],
-    showIndicatorDots: true
+    showIndicatorDots: true,
+    tabs: [
+      { title: "发现", flex: 1 },
+      { title: "要闻", flex: 1 },
+      { title: "7*27", flex: 1 },
+      { title: "自选", flex: 1 },
+      { title: "题材", flex: 1 }
+    ],
+    currentTab: 0,
+  },
+
+  onTabSelected(e) {
+    this.setData({
+      currentTab: e.detail.index
+    });
   }
 })
