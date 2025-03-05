@@ -1,5 +1,22 @@
 <scroll-view class="container" scroll-y="true" enable-flex="true">
   <banner-swiper banners="{{banners}}"></banner-swiper>
   <swiper-grid items="{{grid_items}}"></swiper-grid>
-  <tab-segment class="tabs" tabs="{{tabs}}" direction="horizontal" bind:tabSelected="onTabSelected"></tab-segment>
+  <tab-segment class="tabs" tabs="{{tabs}}" direction="horizontal" bind:tabSelected="onTabSelected"/>
+  <view class="tab-content">
+    <block wx:if="{{currentTab === 0}}">
+      <text>发现内容</text>
+    </block>
+    <block wx:if="{{currentTab === 1}}">
+      <text>要闻内容</text>
+    </block>
+    <block wx:if="{{currentTab === 2}}">
+      <text>7*27内容</text>
+    </block>
+    <block wx:if="{{currentTab === 3}}">
+      <text>自选内容</text>
+    </block>
+    <block wx:if="{{currentTab === 4}}">
+      <text>题材内容</text>
+    </block>
+  </view>
 </scroll-view>

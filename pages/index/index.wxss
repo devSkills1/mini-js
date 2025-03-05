@@ -8,5 +8,12 @@
 
 .container .tabs {
   width: 80%;
+  height: 40rpx;
   background-color: yellowgreen;
+}
+
+text {
+  font-size: 30rpx;
+  color: rgb(255, 0, 43);
+  font-weight: 100;
 }

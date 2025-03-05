@@ -1,0 +1,21 @@
+<scroll-view scroll-y style="height: 100vh;">
+  <view class="question-list">
+    <block wx:for="{{questions}}" wx:key="index">
+      <view class="question-item">
+        <text class="question-item-title">{{item.question}}</text>
+        <radio-group bindchange="onRadioChange" data-index="{{index}}">
+          <label wx:for="{{item.options}}" wx:for-item="option" wx:for-index="optionIndex" wx:key="option" class="option-label">
+            <radio value="{{option}}" checked="{{answers[index] === option}}" />
+            <text>{{option}}</text>
+          </label>
+        </radio-group>
+      </view>
+    </block>
+  </view>
+  <button bindtap="onSubmit" class="submit-button">提交</button>
+</scroll-view>
+
+
+<!-- wx:for-item="option"：将内层循环的默认变量名 item 改为 option，直接表示选项值。
+wx:for-index="optionIndex"：将内层循环的索引名改为 optionIndex，避免覆盖外层循环的 index。
+data-index="{{index}}" 和 checked="{{answers[index] === option}}" 现在可以正确引用外层循环的 index，即题目索引。 -->

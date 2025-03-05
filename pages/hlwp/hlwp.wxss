@@ -1,0 +1,35 @@
+.question-list {
+  padding: 20rpx;
+}
+
+.question-item {
+  margin-bottom: 40rpx;
+}
+
+.question-item-title {
+  margin-bottom: 20rpx;
+}
+
+.question-item text {
+  display: block;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  /* 垂直居中对齐 */
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+}
+
+.option-label radio {
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  /* 在 radio 和 text 之间添加间距 */
+}
+
+.submit-button {
+  margin-bottom: 50rpx;
+}

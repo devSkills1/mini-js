@@ -1,0 +1,6 @@
+<view class="container">
+  <text>测试结果</text>
+  <block wx:for="{{results}}" wx:key="index">
+    <text>{{item}}</text>
+  </block>
+</view>

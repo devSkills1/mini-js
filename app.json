@@ -3,14 +3,16 @@
     "pages/index/index",
     "pages/login/login",
     "pages/grid/grid",
-    "pages/learn/learn"
+    "pages/learn/learn",
+    "pages/hlwp/hlwp",
+    "pages/result/result"
   ],
-  "entryPagePath": "pages/index/index",
+  "entryPagePath": "pages/hlwp/hlwp",
   "window": {
-    "navigationBarBackgroundColor": "#0000FF",
-    "navigationBarTitleText": "功能演示",
-    "enablePullDownRefresh": false,
-    "backgroundTextStyle": "dark"
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "单选题Demo",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "selectedColor": "#FF0000",
@@ -19,6 +21,10 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页"
+      },
+      {
+        "pagePath": "pages/hlwp/hlwp",
+        "text": "性格测试"
       },
       {
         "pagePath": "pages/login/login",

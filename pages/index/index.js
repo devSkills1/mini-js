@@ -26,6 +26,7 @@ Page({
       { title: "自选", flex: 1 },
       { title: "题材", flex: 1 }
     ],
+    currentTabContent: [],
     currentTab: 0,
   },
 

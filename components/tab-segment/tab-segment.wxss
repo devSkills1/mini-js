@@ -17,14 +17,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   cursor: pointer;
   position: relative;
 }
 
 .tab-title {
-  margin-bottom: 2px;
-  font-size: 16px;
+  margin-bottom: 2rpx;
+  font-size: 15px;
   color: #000;
 }
 
